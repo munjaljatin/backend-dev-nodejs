@@ -5,7 +5,7 @@ require("./config/db");
 const PORT = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
-  res.send("Send..");
+  res.send("Book Management System API");
 });
 
 app.listen(PORT, () => {

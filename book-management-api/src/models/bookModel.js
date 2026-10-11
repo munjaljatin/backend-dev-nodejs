@@ -153,7 +153,7 @@ const patchBook = async (id, updates) => {
   if (Object.keys(data).length === 0) {
     throw new Error("No fields provided for update");
   }
-  const updatedBook = await prisma.book.update({
+  const updatedBook = await prisma.books.update({
     where: { id: Number(id) },
     data,
   });
